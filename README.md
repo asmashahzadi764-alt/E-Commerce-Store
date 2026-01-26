@@ -1,140 +1,72 @@
-🛒 E-Commerce Store (Full-Stack Project)
-📌 Overview
+E-Commerce Store (Full-Stack Project)
 
-This E-Commerce Store is a full-stack web application that allows users to browse products, create an account, log in securely, and manage a shopping cart.
-The project is built using JavaScript, Node.js, and MongoDB, following best practices for security and scalability.
+Overview
+This E-Commerce Store is a full-stack web application that allows users to register, log in securely, browse products, and manage a shopping cart. The application is built using JavaScript, Node.js, and MongoDB, following modern development practices with a focus on security and scalability.
 
-✨ Features
+Features
+User Registration
+User Login with Authentication
+Display Products in Store
+Add Products to Cart
+Remove Products from Cart
+Automatic Cart Total Calculation
+MongoDB Database Integration
+Secure Handling of Sensitive Data
 
-🔐 User Registration
+Tech Stack
+Frontend: JavaScript, HTML, CSS
+Backend: Node.js, Express.js
+Database: MongoDB
 
-🔑 Secure User Login (Authentication)
-
-🛍️ Display Store Products
-
-➕ Add Products to Cart
-
-➖ Remove Products from Cart
-
-🧮 Automatic Cart Total Calculation
-
-🗄️ MongoDB Database Integration
-
-🔒 Secure Handling of Sensitive Data
-
-🛠️ Tech Stack
-Frontend
-
-JavaScript
-
-HTML
-
-CSS
-
-Backend
-
-Node.js
-
-Express.js
-
-Database
-
-MongoDB
-
-📁 Project Structure
+Project Structure
 ecommerce-store/
-│
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── middleware/
-│   └── server.js
-│
-├── frontend/
-│   ├── components/
-│   ├── pages/
-│   └── assets/
-│
-├── .env
-├── .gitignore
-├── package.json
-└── README.md
+backend/
+models/
+routes/
+controllers/
+middleware/
+server.js
+frontend/
+components/
+pages/
+assets/
+.env
+.gitignore
+package.json
+README.md
 
-🔐 Security & Data Protection
+Security and Sensitive Data Protection
+This project is designed with security as a priority. No sensitive or confidential data is exposed in the repository. All critical information such as database credentials, secret keys, and server configuration values are stored securely using environment variables.
 
-Security has been a top priority in this project.
-No sensitive data is exposed or pushed to the repository.
+Sensitive data is kept inside a .env file, which includes the MongoDB connection string, JWT secret key, and server port configuration. The .env file is added to .gitignore to ensure that it is never committed to the repository. This approach prevents unauthorized access, protects user data, and reduces the risk of credential theft.
 
-Environment Variables
-
-All confidential information is stored in a .env file:
-
-MongoDB Connection URI
-
-JWT Secret Key
-
-Server Port
-
-Example .env file:
-
+Environment Variables Example
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
 
-Git Protection
+How to Run the Project
+Clone the repository from GitHub.
+Navigate to the backend directory and install dependencies using npm install.
+Create a .env file in the root directory and add your own configuration values.
+Start the backend server using npm start.
+Run or open the frontend separately depending on your setup.
 
-.env is added to .gitignore
+Application Workflow
+The user registers an account.
+The user logs in using secure authentication.
+Products are displayed on the store page.
+The user adds or removes products from the cart.
+The total cart value is calculated automatically.
 
-Database credentials and secret keys are never committed
+Future Enhancements
+Online payment gateway integration
+Admin panel for product and order management
+Order history and tracking system
+Product search and filtering functionality
 
-Prevents unauthorized access and data theft
+Author Note
+This project was developed for learning and academic purposes. It demonstrates full-stack development concepts, RESTful APIs, database integration, and secure handling of sensitive data using industry best practices.
 
-🚀 Getting Started
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/ecommerce-store.git
-
-2️⃣ Install Backend Dependencies
-cd backend
-npm install
-
-3️⃣ Configure Environment Variables
-
-Create a .env file in the root directory and add your own values.
-
-4️⃣ Start the Server
-npm start
-
-5️⃣ Run the Frontend
-
-Open the frontend files in your browser or start the frontend server if configured separately.
-
-👤 Application Workflow
-
-User registers an account
-
-User logs in securely
-
-Products are displayed on the store page
-
-User adds or removes products from the cart
-
-Cart total updates automatically
-
-📈 Future Enhancements
-
-Payment gateway integration
-
-Admin dashboard for product management
-
-Order history and tracking
-
-Product search and filtering
-
-🧑‍💻 Author
-
-This project was developed for learning and academic purposes, following modern full-stack development practices and security standards.
-
-📜 License
-
-This project is open-source and available for educational use.
+License
+This project is open-source and intended for educational use only.
